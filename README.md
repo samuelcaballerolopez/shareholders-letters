@@ -63,13 +63,3 @@ This code is optimized for **Google Colab**.
     * `Discovery Engine API` (Vertex AI Search)
 3.  Create a **Data Store** in Vertex AI Search and upload your PDF documents (e.g., Shareholder Letters).
 
-### Setup in Colab
-1.  Download the `.ipynb` file from this repository.
-2.  Upload it to [Google Colab](https://colab.research.google.com/).
-3.  **Important:** Update the configuration block with your specific Cloud details:
-
-```python
-# --- CONFIGURATION ---
-PROJECT_ID = "YOUR_PROJECT_ID_HERE"      # e.g., analyst-project-123456
-DATA_STORE_ID = "YOUR_DATA_STORE_ID"     # e.g., shareholders-letters
-LOCATION = "global"
