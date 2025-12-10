@@ -38,12 +38,14 @@ Unlike basic RAG implementations that simply chunk text, this architecture lever
 **1. Surgical Precision:**
 *The system correctly identifies a specific $619M tax dispute in Brazil buried within Netflix's shareholder letter, ignoring generic tax tables.*
 
-![Chat Output](output_colab.png)
+<img width="1839" height="532" alt="output_colab" src="https://github.com/user-attachments/assets/b22e5d71-fddb-4c5b-aebe-2a3866d5fc0f" />
+
 
 **2. Cloud Infrastructure:**
 *Shareholder letters indexed and processed in Vertex AI Agent Builder.*
 
-![Vertex AI Console](Captura_de_pantalla_2025-12-10_084750.png)
+<img width="1907" height="851" alt="app_cloud" src="https://github.com/user-attachments/assets/a95cfa87-1cc2-4a2f-be53-97a69755b8a7" />
+
 
 ---
 
@@ -89,7 +91,7 @@ Created by **Samuel Caballero** - Data Analyst & AI Engineer.
 
 If you have any questions about the architecture or want to discuss AI integration in Finance, feel free to reach out!
 
-<a href="https://www.linkedin.com/in/samuel-caballero-lopez-b83030248/" target="_blank">
+<a href="https://www.linkedin.com/in/samuelcablop/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 <a href="mailto:samuelcablop@gmail.com">
