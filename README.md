@@ -1,21 +1,21 @@
-# 🏦 Financial RAG Analyst (Vertex AI & Gemini)
+# 🏦 Shareholder Letter RAG Analyst
 
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini_2.0_Flash-8E75B2?style=for-the-badge)
 
 An enterprise-grade **Retrieval-Augmented Generation (RAG)** system built on **Google Cloud Vertex AI** and **Gemini 2.0 Flash**, specifically designed to audit, analyze, and extract strategic insights from **Shareholder Letters**.
 
 Unlike basic RAG implementations that simply chunk text, this architecture leverages **Vertex AI Search (Discovery Engine)** to understand the unique narrative structure of Shareholder Letters, ensuring "surgical precision" when retrieving specific executive insights, strategic risks, or tax disputes buried in the text.
+
 ---
 
 ## 🚀 Key Features
 
 * **☁️ Cloud-Native Architecture:** Fully deployed on Google Cloud Platform (GCP) for security and scalability.
-* **🔎 Deep Retrieval:** Uses `extractive_content_spec` to force the search engine to return precise narrative fragments, avoiding empty metadata results.
-* **🧠 SOTA LLM:** Powered by **Gemini 2.0 Flash** for high-speed, low-latency financial synthesis.
-* **📉 Unstructured Data Analysis:** Capable of ingesting complex PDFs (Tesla, Netflix, Berkshire Hathaway) and extracting structured insights.
+* **🔎 Deep Retrieval:** Uses `extractive_content_spec` to force the search engine to return precise narrative fragments from the letters, avoiding empty metadata results.
+* **🧠 SOTA LLM:** Powered by **Gemini 2.0 Flash** for high-speed, low-latency synthesis of executive commentary.
+* **📉 Shareholder Narrative Analysis:** Capable of ingesting complex PDF letters (Tesla, Netflix, Berkshire Hathaway) and extracting structured strategic insights.
 * **💬 Interactive Interface:** Includes a Python-based interactive chat loop optimized for Google Colab.
 
 ---
@@ -25,7 +25,7 @@ Unlike basic RAG implementations that simply chunk text, this architecture lever
 | Component | Technology | Purpose |
 | :--- | :--- | :--- |
 | **Infrastructure** | Google Cloud Platform | Scalable serverless environment. |
-| **Storage** | Cloud Storage (GCS) | Data Lake for raw PDF ingestion. |
+| **Storage** | Cloud Storage (GCS) | Data Lake for raw PDF ingestion (Shareholder Letters). |
 | **Retrieval Engine** | Vertex AI Search | Semantic search with OCR and structural understanding. |
 | **Generative Model** | Gemini 2.0 Flash | Context synthesis and reasoning. |
 | **Orchestration** | Python (Vertex SDK) | Logic handling and API connectivity. |
@@ -39,15 +39,11 @@ Unlike basic RAG implementations that simply chunk text, this architecture lever
 *The system correctly identifies a specific $619M tax dispute in Brazil buried within Netflix's shareholder letter, ignoring generic tax tables.*
 
 ![Chat Output](output_colab.png)
-<img width="1839" height="532" alt="output_colab" src="https://github.com/user-attachments/assets/6779229c-cefb-42dd-b89b-a5dbadc77d03" />
-
 
 **2. Cloud Infrastructure:**
-*Documents indexed and processed in Vertex AI Agent Builder.*
+*Shareholder letters indexed and processed in Vertex AI Agent Builder.*
 
 ![Vertex AI Console](Captura_de_pantalla_2025-12-10_084750.png)
-<img width="1907" height="851" alt="app_cloud" src="https://github.com/user-attachments/assets/ac418d4c-d0e4-4611-ab1c-ce710f078603" />
-
 
 ---
 
@@ -60,16 +56,42 @@ This code is optimized for **Google Colab**.
 2.  Enable the following APIs:
     * `Vertex AI API`
     * `Discovery Engine API` (Vertex AI Search)
-3.  Create a **Data Store** in Vertex AI Search and upload your PDF documents (e.g., Shareholder Letters).
+3.  Create a **Data Store** in Vertex AI Search and upload your Shareholder Letters (PDFs).
 
+### Setup in Colab
+1.  Download the `.ipynb` file from this repository.
+2.  Upload it to [Google Colab](https://colab.research.google.com/).
+3.  Update the configuration variables (Project ID, Data Store ID) in the second cell of the notebook.
+4.  Run the cells. The script will handle authentication via your Google account.
 
+---
+
+## 🧠 Design Decisions
+
+### Why Vertex AI Search instead of local Vector DBs?
+* **Scalability:** The system scales automatically from 3 letters to 100,000 without managing servers or re-indexing pipelines.
+* **Document Understanding:** Vertex AI parses the native structure of PDFs (headers, columns), which is critical for financial narratives where context is often positional.
+
+### Why "Surgical Precision"?
+The system is tuned for specific queries (e.g., *"What strategic risks does Tesla mention?"*) rather than generic summarization. This avoids the "lost in the middle" phenomenon common in LLMs when processing dense executive reports.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
 
 ## 📬 Contact
 
-Created by **Samuel Caballero** 
+Created by **Samuel Caballero** - Data Analyst & AI Engineer.
 
 If you have any questions about the architecture or want to discuss AI integration in Finance, feel free to reach out!
 
-<a href="https://www.linkedin.com/in/samuelcablop/" target="_blank">
+<a href="https://www.linkedin.com/in/samuel-caballero-lopez-b83030248/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="mailto:samuelcablop@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
