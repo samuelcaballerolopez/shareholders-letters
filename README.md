@@ -5,10 +5,9 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini_2.0_Flash-8E75B2?style=for-the-badge)
 
-An enterprise-grade **Retrieval-Augmented Generation (RAG)** system designed to audit and analyze unstructured financial documents (Shareholder Letters, 10-K Reports) using **Google Cloud Vertex AI** and **Gemini 2.0 Flash**.
+An enterprise-grade **Retrieval-Augmented Generation (RAG)** system built on **Google Cloud Vertex AI** and **Gemini 2.0 Flash**, specifically designed to audit, analyze, and extract strategic insights from **Shareholder Letters**.
 
-Unlike basic RAG implementations that simply chunk text, this architecture leverages **Vertex AI Search (Discovery Engine)** to understand document structure (tables, financial metrics), ensuring "surgical precision" when retrieving critical data like tax disputes or strategic risks.
-
+Unlike basic RAG implementations that simply chunk text, this architecture leverages **Vertex AI Search (Discovery Engine)** to understand the unique narrative structure of Shareholder Letters, ensuring "surgical precision" when retrieving specific executive insights, strategic risks, or tax disputes buried in the text.
 ---
 
 ## 🚀 Key Features
@@ -67,7 +66,7 @@ This code is optimized for **Google Colab**.
 
 ## 📬 Contact
 
-Created by **Samuel Caballero** - Data Analyst & AI Engineer.
+Created by **Samuel Caballero** 
 
 If you have any questions about the architecture or want to discuss AI integration in Finance, feel free to reach out!
 
