@@ -77,11 +77,6 @@ This code is optimized for **Google Colab**.
 ### Why "Surgical Precision"?
 The system is tuned for specific queries (e.g., *"What strategic risks does Tesla mention?"*) rather than generic summarization. This avoids the "lost in the middle" phenomenon common in LLMs when processing dense executive reports.
 
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
