@@ -63,3 +63,17 @@ This code is optimized for **Google Colab**.
     * `Discovery Engine API` (Vertex AI Search)
 3.  Create a **Data Store** in Vertex AI Search and upload your PDF documents (e.g., Shareholder Letters).
 
+
+
+## 📬 Contact
+
+Created by **Samuel Caballero** - Data Analyst & AI Engineer.
+
+If you have any questions about the architecture or want to discuss AI integration in Finance, feel free to reach out!
+
+<a href="www.linkedin.com/in/samuelcablop" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="mailto:samuelcablop@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
